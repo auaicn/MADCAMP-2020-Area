@@ -64,7 +64,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMt-Px-qkW"/>
+                                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bpS-wi-1DL"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -110,48 +110,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="id" destination="hTY-C2-vNr" id="Hri-hX-p6Y"/>
+                        <outlet property="password" destination="vNN-o6-9iq" id="dIC-u6-nPX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-410" y="35"/>
-        </scene>
-        <!--Main-->
-        <scene sceneID="AjO-wM-XT1">
-            <objects>
-                <viewController storyboardIdentifier="main" id="KAQ-Q9-8Gm" userLabel="Main" customClass="MainScreenController" customModule="Area" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CAa-cm-rpL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fL5-Ja-yMp">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="9yj-Ag-kr7">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oMZ-6b-Hu1">
-                                            <connections>
-                                                <action selector="insertButton:" destination="KAQ-Q9-8Gm" id="R4R-qJ-sqL"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="overlay_grid" translatesAutoresizingMaskIntoConstraints="NO" id="WyC-07-UUP">
-                                <rect key="frame" x="0.0" y="224" width="414" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="ceN-wy-1nw"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="uXE-0S-i1N"/>
-                    <connections>
-                        <outlet property="imageView" destination="WyC-07-UUP" id="7HN-m1-H45"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WIz-HZ-TJp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1087" y="35"/>
         </scene>
         <!--Register-->
         <scene sceneID="OXo-XM-iOn">
@@ -223,7 +189,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="base_to_interest:" destination="teE-ko-nt4" eventType="touchUpInside" id="Hli-7f-S7y"/>
-                                                    <segue destination="5YE-cg-oLD" kind="show" id="Vxb-bN-C8k"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -247,10 +212,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="IXq-tB-Pbe"/>
                     <connections>
-                        <outlet property="textField2" destination="spp-LX-y5M" id="uvk-fJ-DmL"/>
-                        <outlet property="textField3" destination="kic-rZ-TRR" id="HwC-lO-X1Q"/>
-                        <outlet property="textField4" destination="WiR-o3-SL7" id="JdZ-hP-lY4"/>
-                        <outlet property="textField5" destination="tTC-QN-xwJ" id="6DF-EI-TyL"/>
+                        <outlet property="register_id" destination="kic-rZ-TRR" id="MQN-4q-pIL"/>
+                        <outlet property="register_name" destination="spp-LX-y5M" id="dqe-9B-4yG"/>
+                        <outlet property="register_password" destination="tTC-QN-xwJ" id="5el-ib-vHb"/>
+                        <outlet property="register_phone" destination="WiR-o3-SL7" id="yBb-zJ-hb2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6os-7a-Vn5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -262,7 +227,7 @@
             <objects>
                 <viewController storyboardIdentifier="interest" title="Register_interest" id="5YE-cg-oLD" customClass="Register_interest_check" customModule="Area" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NVA-9V-5au">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="interest" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDx-E3-oNg">
@@ -287,10 +252,124 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLe-17-yxD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="363.768115942029" y="754.6875"/>
+            <point key="canvasLocation" x="468" y="755"/>
+        </scene>
+        <!--Ar View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="ar" id="BV1-FR-VrT" customClass="ArViewController" customModule="Area" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kPH-xA-54L">
+                                <rect key="frame" x="20" y="20" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="B1">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="22"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <state key="highlighted">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ju6-hf-z2o" userLabel="B2">
+                                <rect key="frame" x="184" y="20" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="B2">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="22"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tv2-V8-mC6" userLabel="B3">
+                                <rect key="frame" x="348" y="19" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="B3">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="22"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZcK-mP-t2E" userLabel="pick_gallery">
+                                <rect key="frame" x="20" y="736" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="+">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="22"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="addAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="FDc-Y1-Wc3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moon" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eil-tE-q8c" userLabel="first_image">
+                                <rect key="frame" x="74" y="682" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moon" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dbv-GD-SVJ" userLabel="second_image">
+                                <rect key="frame" x="184" y="682" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moon" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VGT-7p-VYn" userLabel="third_image">
+                                <rect key="frame" x="294" y="682" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rms-qE-fYi"/>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outletCollection property="imageView" destination="eil-tE-q8c" collectionClass="NSMutableArray" id="HIY-cG-ahU"/>
+                        <outletCollection property="imageView" destination="dbv-GD-SVJ" collectionClass="NSMutableArray" id="f3H-df-AvH"/>
+                        <outletCollection property="imageView" destination="VGT-7p-VYn" collectionClass="NSMutableArray" id="I1n-kg-cIb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="35"/>
         </scene>
     </scenes>
     <resources>
-        <image name="overlay_grid" width="512" height="512"/>
+        <image name="moon" catalog="system" width="64" height="60"/>
     </resources>
 </document>

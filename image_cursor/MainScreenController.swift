@@ -9,6 +9,7 @@
 import UIKit
 import SceneKit
 import ARKit
+import Alamofire
 
 class MainScreenController: UIViewController, ARSCNViewDelegate {
 
@@ -20,6 +21,19 @@ class MainScreenController: UIViewController, ARSCNViewDelegate {
    }
     
     @IBOutlet weak var imageView: UIImageView!
+    
+    // let url = "http://192.249.19.243:0380/image/upload"
+    let url = "http://192.249.19.243:0380/uploads/abc.jpeg"
+    
+    @IBAction func loadAction(_ sender: Any) {
+        
+        AF.download(url).responseData { response in
+            if let data = response.value {
+                let image = UIImage(data: data)
+                self.imageView.image = image
+            }
+        }
+    }
     
     @IBAction func insertButton(_ sender: Any) {
         let alert =  UIAlertController(title: "원하는 타이틀", message: "원하는 메세지", preferredStyle: .actionSheet)
@@ -57,7 +71,6 @@ class MainScreenController: UIViewController, ARSCNViewDelegate {
     }
 }
 
-
 extension MainScreenController : UIImagePickerControllerDelegate,
 UINavigationControllerDelegate{
     
@@ -72,8 +85,7 @@ UINavigationControllerDelegate{
         picker.dismiss(animated: true, completion: nil)
     }
 
-    func main(_ picker: UIImagePickerController) {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
 }
-

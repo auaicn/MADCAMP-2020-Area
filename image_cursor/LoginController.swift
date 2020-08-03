@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginController: UIViewController{
     
@@ -14,15 +15,34 @@ class LoginController: UIViewController{
         super.viewDidLoad()
     }
 
+    @IBOutlet weak var id: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    let url = "http://192.249.19.243:0380/user/login"
+    
     @IBAction func loginAction(_ sender: Any) {
         // storyboard 에서 controller를 찾은후
         // controller 를 찾아야 한다.
         // storyboard 의 scene 마다, id를 부여할 수 있는데,
         // ViewController 의 id 로 "login"을 부여했다.
         
+        struct Login: Encodable {
+            let id: String
+            let password: String
+        }
+
+        let login = Login(id: id.text ?? "default_id", password: password.text ?? "default_password")
+
+        debugPrint(login)
         
-        
-        
+        AF.request(url,
+                   method: .post,
+                   parameters: login,
+                   encoder: JSONParameterEncoder.default).response { response in
+                // response
+                debugPrint(response)
+                    
+        }
         
         // 이게 있을 수도 없을 수도 있어서 예외처리를 해주어야 한다.
         if let controller = self.storyboard?.instantiateViewController(withIdentifier: "main")
