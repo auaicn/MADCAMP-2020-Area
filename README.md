@@ -22,7 +22,7 @@ xcode ver 12.01
 swift compiler 5.3
 
 Carthage  
--Alaomofire  
+- Alaomofire  
 
 CocoaPods
 - GTMSessionFetcher (1.4.0)
