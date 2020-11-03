@@ -16,8 +16,13 @@ Tech Stack
 - (BE) MongoDB, Mongoose, Google ML-Kit 
 - (VCS) git
 
-Carthage
--Alaomofire
+## Frameworks
+
+xcode ver 12.01
+swift compiler 5.3
+
+Carthage  
+-Alaomofire  
 
 CocoaPods
 - GTMSessionFetcher (1.4.0)
