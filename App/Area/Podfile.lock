@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.3)
+  - Toast-Swift (5.0.1)
+  - UnderKeyboard (13.0.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - Toast-Swift (~> 5.0.0)
+  - UnderKeyboard (~> 13.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Toast-Swift
+    - UnderKeyboard
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  UnderKeyboard: 79ea6feb497af99c1856aaae0ab8ded3c739f745
+
+PODFILE CHECKSUM: 84210bc7a445339b758adf95e246f43bed65a3ff
+
+COCOAPODS: 1.10.1

@@ -21,10 +21,9 @@ Tech Stack
 xcode ver 12.01
 swift compiler 5.3
 
-Carthage  
-- Alaomofire  
-
 CocoaPods
+- Alaomofire  
+- Toast-Swift
 - GTMSessionFetcher (1.4.0)
 - GoogleDataTransport (7.1.0)
 - GoogleMLKit (0.62.0)
